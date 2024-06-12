@@ -1,0 +1,151 @@
+/*
+Student name: Lasata Maharjan
+University ID:2408473
+*/
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    /*flex property helps to set length*/
+    display: flex;
+    gap:35px;
+    padding:30px;
+}
+body{
+    /*the background image will be fixed*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /*the image will only be shown once*/
+    /*the overflow is trimmed and rest of the content is hidden*/
+    background-size: cover;
+    /*this means that the background image will be fully covered
+    in the element*/
+}
+h2{ /*to design the WEATHER DASHBOARD that appears on the top*/
+    color: black;
+    margin: 0px;
+    padding: 6px;
+     /*a is the alpha value in rgb which alters the opacity (makes it translucent)*/
+    background-color:rgba(158, 200, 239, 0.6);
+}
+hr{
+    border: 1px solid black;
+}
+input[type="button"]:hover{ 
+    /*when the mouse hovers on search button, it will change color and 
+    the cursor of mouse will also change to pointer*/
+    background-color: rgb(88, 213, 171);
+    cursor:pointer;
+}
+
+input[type="text"]{
+    /*styles the text bar where name of city is searched*/
+    width:110%;
+    height:40px;
+    padding:17px;
+    margin: 3px;
+    border: 1px solid grey;
+    font-size: 15px;
+}
+.weatherdata{
+    width:100%;
+}
+.search{
+    /*styles the search button*/
+    background-color: lightseagreen ;
+    width: 100%;
+    margin:10px;
+    padding:10px;
+    height:40px;
+    font-size: 16px;
+}
+
+.input .separator{
+    /*for the greyish line that appears below search button*/
+    height:1px;
+    width: 90%;
+    margin:20px;
+    background: darkslategray;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.input .separator::before{ 
+    /*::before is to insert something before the content*/
+    content:"Thank You";
+    color: darkslategray;
+    border-radius: 5px;
+    font-size: 18px;
+    padding:0 15px;
+    margin-top: -4px;
+    background-color: rgb(168, 195, 245);
+}
+.currentdata{
+    box-shadow: 8px 8px 10px lightslategray;
+    border:2px solid black;
+    justify-content: space-between;
+    /*to ensure a space between the items*/
+    display: flex;
+    padding: 20px 50px 20px 20px;
+    background-image: url('https://images.pexels.com/photos/1076885/pexels-photo-1076885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    border-radius: 15px;
+}
+
+.currentdata .icon img{
+    /*styles the icon fetched from openweather api placed in <img> tag*/
+    max-width: 150px;
+    margin-top: -18px;
+}
+.currentdata .icon #description{
+    font-size: 20px;
+    margin-top: -10px;
+}
+.weatherdata p{
+    /*styles all the p elements present inside this class*/
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.forcast{
+    margin: 20px 0;
+}
+#weather-cards{
+    display: flex;
+    gap:12px;
+    flex-wrap: wrap;
+}
+#weather-cards .card{
+    /*styles each <li class="card"> present in <ul> element separately */
+    box-shadow: 8px 8px 10px lightslategray;
+    border: 2px solid black;
+    width: calc(21% - 20px);
+    border-radius: 15px;
+    list-style:none;
+    padding:10px;
+    background-image: url('https://images.pexels.com/photos/1076885/pexels-photo-1076885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+   
+}
+#weather-cards .card:hover{
+    box-shadow: 0 0 30px rgba(52, 152, 219, 1);
+    transition: box-shadow 0.3s ease;
+}
+.weather_icon {
+    width: 55%; 
+    height: auto;
+    display:block;/*removes all the extra spacing*/
+    margin: -2px 0px -1rem 1.5rem; 
+}
+footer{
+    /*styles the footer area that appears at the bottom*/
+    margin: 0px;
+    padding: 6px;
+     /*a is the alpha value in rgb which alters the opacity (makes it translucent)*/
+    background-color:rgba(158, 200, 239, 0.6);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,50 @@
+<!--Student name:Lasata Maharjan University ID:2408473-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="Lasata_Maharjan_2408473.css">
+    <script src="Lasata_Maharjan_2408473.js"defer></script>
+    <!--defer tells the browser to wait as the script
+    will be executed after the page has finished parsing/analyzing-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body background="https://img.freepik.com/free-vector/watercolor-abstract-background_23-2149135738.jpg?w=1060&t=st=1704280566~exp=1704281166~hmac=54ebf9e1087529270a629babfed86b0cc8d0690718d911ee0ea9961472579bf4">
+    <h2 align="center">WEATHER DASHBOARD</h2><hr><br>
+    <div class="container">
+        <div class="input">
+            <label>Enter city name: </label>
+            <input id="cityn" class="city" type="text" name="city" placeholder="......" value="Sasaram"><br>
+            <input class="search" type="button" value="Search" name="search"> <br>
+            <div class="separator"></div>
+            
+        </div>
+    <div class="weatherdata">
+        <div class="currentdata">
+            <div class="details">
+                <i class="material-icons">&#xe55f;</i><font id="name" size="6">_______</font>
+                <h3 id="date">(_______)</h3>
+                <p id="temp">Temperature:____°C</p>
+                <P id="pressure">Pressure:____Pa</P>
+                <p id="wind">Wind:____KMPH</p>
+                <p id="humidity">Humidity:_____%</p>
+            </div>
+            <div class="icon">
+                <img id="image" alt="weather-icon">
+                <h4 id="description">_____</p>
+            </div>
+        </div><br>
+        <div class="forecast" id="seven">
+        <font size=5><b>Past 7-day Forecast</b></font>
+            <br><br>
+            <ul id="weather-cards"></ul>
+            </ul>
+        </div>
+    </div>
+</div>
+<footer align="center"> Copyright &copy, Lasata Maharjan ID:2408473</footer>
+<!--&copy gives the sign of copyright-->
+</body>
+</html>
